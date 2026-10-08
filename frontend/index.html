@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murarisai Tadepalli | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand"><i class="fa-solid fa-laptop-code"></i> MT</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Hackathons</a>
+                <a href="#contact">Contact</a>
+                <button id="nav-chatbot-btn" class="btn btn-outline"><i class="fa-solid fa-sparkles"></i> Ask My AI</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name" id="hero-name-target">Murarisai Tadepalli</h1>
+            <h2 class="hero-title" id="hero-title-target">CSE-IoT Student | Developer | AI & GenAI Enthusiast</h2>
+            <p class="hero-description">
+                I build practical solutions at the intersection of software development, AI, Generative AI, backend systems, and IoT.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="#" target="_blank" class="btn btn-icon" id="hero-github-btn"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+
+                <div class="about-details">
+                    <div class="about-text" id="about-text-target">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="about-education" id="education-target">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container" id="skills-target">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-target">
+                <!-- Populated by JS -->
+                <p class="placeholder-text">Projects will be loaded here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Hackathons</h2>
+            <div class="timeline" id="experience-target">
+                <!-- Populated by JS -->
+                <p class="placeholder-text">Experience and Hackathon details will be loaded here.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Let's Build Something</h2>
+            <p class="contact-desc">I'm always open to discussing new projects, hackathons, or opportunities.</p>
+            <div class="contact-links" id="contact-target">
+                <!-- Populated by JS -->
+                <a href="mailto:placeholder@email.com" class="btn btn-outline" id="contact-email-btn"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Murarisai Tadepalli</h3>
+                    <p>CSE-IoT Student | Developer | AI & GenAI Enthusiast</p>
+                </div>
+                <div class="footer-links" id="footer-social-target">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with curiosity, code, and continuous learning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <button class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div>
+                    <h4>AI Portfolio Assistant</h4>
+                    <p>Ask me anything about Murari</p>
+                </div>
+                <button class="chatbot-close" id="chatbot-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot">
+                    <div class="msg-bubble">
+                        Hi! I'm Murari's AI portfolio assistant. You can ask me about his projects, skills, experience, and more.
+                    </div>
+                </div>
+                <div class="chatbot-suggestions" id="chatbot-suggestions">
+                    <button class="suggestion-btn">What are Murari's technical skills?</button>
+                    <button class="suggestion-btn">What projects has he built?</button>
+                    <button class="suggestion-btn">Where can I find his GitHub?</button>
+                    <button class="suggestion-btn">How can I contact Murari?</button>
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chat-input" placeholder="Ask me anything about Murari...">
+                <button id="chat-submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/chatbot.js"></script>
+</body>
+</html>
